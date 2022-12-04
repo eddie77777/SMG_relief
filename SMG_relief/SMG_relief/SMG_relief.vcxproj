@@ -72,15 +72,23 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\Tiberio\Desktop\Anul II sem I\SMG\_external\glew-2.1.0\include;C:\Users\Tiberio\Desktop\Anul II sem I\SMG\_external\glfw-3.3.4.bin.WIN32\include\GLFW;C:\Users\Tiberio\Desktop\Anul II sem I\SMG\_external\glm-stable\glm;C:\Users\Tiberio\Desktop\Anul II sem I\SMG\_external\freeglut\include;C:\Users\Tiberio\Desktop\Anul II sem I\SMG\_external\stb-master;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Tiberio\Desktop\Anul II sem I\SMG\_external\freeglut\lib;C:\Users\Tiberio\Desktop\Anul II sem I\SMG\_external\glew-2.1.0\lib\Release\Win32;C:\Users\Tiberio\Desktop\Anul II sem I\SMG\_external\glfw-3.3.4.bin.WIN32\lib-vc2019;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Users\Tiberio\Desktop\Anul II sem I\SMG\_external\glew-2.1.0\include;C:\Users\Tiberio\Desktop\Anul II sem I\SMG\_external\glfw-3.3.4.bin.WIN32\include\GLFW;C:\Users\Tiberio\Desktop\Anul II sem I\SMG\_external\glm-stable\glm;C:\Users\Tiberio\Desktop\Anul II sem I\SMG\_external\freeglut\include;C:\Users\Tiberio\Desktop\Anul II sem I\SMG\_external\stb-master;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Tiberio\Desktop\Anul II sem I\SMG\_external\freeglut\lib;C:\Users\Tiberio\Desktop\Anul II sem I\SMG\_external\glew-2.1.0\lib\Release\Win32;C:\Users\Tiberio\Desktop\Anul II sem I\SMG\_external\glfw-3.3.4.bin.WIN32\lib-vc2019;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\Tiberio\Desktop\Anul II sem I\SMG\_external\glew-2.1.0\include;C:\Users\Tiberio\Desktop\Anul II sem I\SMG\_external\glfw-3.3.4.bin.WIN32\include\GLFW;C:\Users\Tiberio\Desktop\Anul II sem I\SMG\_external\glm-stable\glm;C:\Users\Tiberio\Desktop\Anul II sem I\SMG\_external\freeglut\include;C:\Users\Tiberio\Desktop\Anul II sem I\SMG\_external\stb-master;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Tiberio\Desktop\Anul II sem I\SMG\_external\freeglut\lib;C:\Users\Tiberio\Desktop\Anul II sem I\SMG\_external\glew-2.1.0\lib\Release\Win32;C:\Users\Tiberio\Desktop\Anul II sem I\SMG\_external\glfw-3.3.4.bin.WIN32\lib-vc2019;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Users\Tiberio\Desktop\Anul II sem I\SMG\_external\glew-2.1.0\include;C:\Users\Tiberio\Desktop\Anul II sem I\SMG\_external\glfw-3.3.4.bin.WIN32\include\GLFW;C:\Users\Tiberio\Desktop\Anul II sem I\SMG\_external\glm-stable\glm;C:\Users\Tiberio\Desktop\Anul II sem I\SMG\_external\freeglut\include;C:\Users\Tiberio\Desktop\Anul II sem I\SMG\_external\stb-master;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Tiberio\Desktop\Anul II sem I\SMG\_external\freeglut\lib;C:\Users\Tiberio\Desktop\Anul II sem I\SMG\_external\glew-2.1.0\lib\Release\Win32;C:\Users\Tiberio\Desktop\Anul II sem I\SMG\_external\glfw-3.3.4.bin.WIN32\lib-vc2019;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -140,6 +148,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="SMG_relief.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Shader.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
